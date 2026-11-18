@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#19090f">
+<meta name="description" content="Acompáñanos a celebrar los XV de Sofía Valentina. Una noche para brillar, el 5 de diciembre de 2026.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:title" content="XV Sofía Valentina · Una noche para brillar">
+<meta property="og:description" content="Estás invitado a celebrar los XV de Sofía Valentina. 5 de diciembre de 2026 · 7:00 p. m.">
+<meta property="og:url" content="https://inquisitive-starship-f1deb3.netlify.app/">
+<meta property="og:image" content="https://inquisitive-starship-f1deb3.netlify.app/social-preview.jpg">
+<meta property="og:image:secure_url" content="https://inquisitive-starship-f1deb3.netlify.app/social-preview.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Corona dorada y diseño vinotinto de los XV de Sofía Valentina">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="XV Sofía Valentina · Una noche para brillar">
+<meta name="twitter:description" content="5 de diciembre de 2026 · 7:00 p. m.">
+<meta name="twitter:image" content="https://inquisitive-starship-f1deb3.netlify.app/social-preview.jpg">
+<title>XV Sofía Valentina · Noche de Realeza</title>
+<style>
+:root{--wine:#4b1026;--wine2:#210812;--gold:#d8b56b;--pale:#f5e4b8;--black:#090708;--cream:#fff5e5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% -10%,#64263b 0,#250c17 42%,#080708 100%);color:var(--cream);font-family:Georgia,'Times New Roman',serif}
+#sparkles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.spark{position:absolute;width:2px;height:2px;background:#f8d98d;border-radius:50%;box-shadow:0 0 7px #e8c477;animation:shine var(--dur) ease-in-out infinite alternate}
+@keyframes shine{from{opacity:.15;transform:scale(.7)}to{opacity:1;transform:scale(2.1)}}
+main{position:relative;z-index:1;max-width:920px;margin:auto;padding:24px 16px 48px}
+.kicker{text-align:center;color:var(--pale);font:10px Arial,sans-serif;letter-spacing:5px;text-transform:uppercase;margin:7px 0 20px}
+.envelope-wrap{max-width:510px;margin:0 auto 22px;text-align:center}
+.envelope{height:185px;position:relative;cursor:pointer;filter:drop-shadow(0 18px 28px #000b);outline:none}
+.env-base{position:absolute;inset:18px 8px 0;border:1px solid var(--gold);border-radius:5px;background:linear-gradient(140deg,#58162f,#190910 75%)}
+.env-fold{position:absolute;inset:18px 8px 0;clip-path:polygon(0 0,50% 65%,100% 0,100% 100%,0 100%);background:linear-gradient(140deg,#6d2540,#260c18)}
+.env-flap{position:absolute;left:8px;right:8px;top:18px;height:102px;clip-path:polygon(0 0,100% 0,50% 100%);background:linear-gradient(140deg,#8b4b50,#37101f);transform-origin:top;transition:transform .85s;z-index:3}
+.seal{position:absolute;z-index:4;top:82px;left:calc(50% - 28px);width:56px;height:56px;border:1px solid var(--pale);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#d2ad63,#633e22);color:#fff2cb;font-size:25px;box-shadow:0 0 22px #e3bc6b66;transition:.35s}
+.envelope.open .env-flap{transform:rotateX(180deg)}.envelope.open .seal{opacity:0;transform:scale(.5)}
+.tap{font:10px Arial;letter-spacing:2px;text-transform:uppercase;color:#e8cb8c;margin-top:4px}
+.invite{max-width:660px;margin:auto;padding:11px;background:linear-gradient(135deg,#f0d58c,#805b2e,#f0d58c);box-shadow:0 28px 85px #000b;opacity:0;transform:translateY(20px) scale(.98);transition:opacity .8s,transform .8s;pointer-events:none}
+.invite.show{opacity:1;transform:none;pointer-events:auto}
+.frame{position:relative;overflow:hidden;text-align:center;padding:42px 24px 35px;border:1px solid #f6e5b7;background:radial-gradient(ellipse at 50% 0,#4c1c2c 0,#210b15 46%,#090708 100%)}
+.frame:before{content:"♛";position:absolute;top:12px;left:0;right:0;color:var(--gold);font-size:26px}
+.corner{position:absolute;color:var(--gold);font-size:30px}.tl{top:13px;left:13px}.tr{top:13px;right:13px}.bl{bottom:9px;left:13px}.br{bottom:9px;right:13px}
+.eyebrow{font:10px Arial;letter-spacing:4px;text-transform:uppercase;color:var(--pale)}
+.crest{width:90px;height:90px;margin:17px auto 16px;border:1px solid var(--gold);border-radius:50% 50% 45% 45%;display:grid;place-items:center;color:var(--pale);font-size:38px;font-style:italic;box-shadow:inset 0 0 0 5px #d8b56b18,0 0 24px #d8b56b24;position:relative}
+.crest:after{content:"✦";position:absolute;top:-13px;color:var(--gold);font-size:18px}
+h1{font-weight:400;font-size:clamp(34px,7vw,61px);line-height:1.02;margin:10px 0 5px;color:#fff4df}
+h1 span{display:block;color:var(--pale);font-style:italic;font-size:.55em;margin-top:8px}
+.age{font-size:clamp(70px,13vw,108px);line-height:1;color:var(--gold);text-shadow:0 0 22px #e0bd7350;margin:13px 0 0}
+.age small{display:block;font:10px Arial;letter-spacing:8px;margin-top:5px;color:#f2dfb0}
+.divider{width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:23px auto}
+.message{max-width:450px;margin:20px auto;color:#f0e2d3;font-size:17px;line-height:1.65}
+.event{font:13px/1.95 Arial;color:#f7e9d6;letter-spacing:.7px}.event strong{color:var(--pale);letter-spacing:1px}.address{font-size:12px;color:#d1bfa7}
+.countdown{display:flex;justify-content:center;gap:9px;margin:24px auto 4px}.unit{border:1px solid #8b6b3c;min-width:59px;padding:9px 7px;background:#ffffff08}.unit b{display:block;color:var(--pale);font:22px Georgia}.unit span{font:9px Arial;letter-spacing:1px;color:#d7c6a9}
+.controls{max-width:660px;margin:22px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px;font-family:Arial,sans-serif}
+.panel{background:#160b10;border:1px solid #76532d;border-radius:13px;padding:19px}.panel h2{font:22px Georgia;color:var(--pale);margin:0 0 8px}.panel p{font:12px/1.6 Arial;color:#d5c6b9;margin:0 0 12px}
+label{display:block;font:11px Arial;color:#e9d19a;margin:12px 0 6px}input{width:100%;padding:12px;border:1px solid #765a3d;border-radius:8px;background:#090708;color:#fff4df;font-size:15px}
+.btn{display:block;width:100%;padding:13px 12px;margin-top:12px;border-radius:999px;border:1px solid var(--gold);background:linear-gradient(110deg,#9a7137,#f0d48b,#9a7137);color:#180d0c;text-align:center;text-decoration:none;font:bold 12px Arial;cursor:pointer}
+.btn.whatsapp{background:#168b55;color:white;border:0}.btn.outline{background:transparent;color:var(--pale)}
+.fixed-seats{margin:18px 0 8px;padding:14px;border:1px solid #76532d;border-radius:9px;background:#ffffff08;color:#f0e2d3;text-align:center;font:13px Arial}.fixed-seats strong{display:inline-block;margin-left:6px;color:var(--pale);font: bold 25px Georgia}.note{font:10px/1.55 Arial;color:#b9a99b;margin-top:11px}.footer{text-align:center;color:#c2a16b;font:10px Arial;letter-spacing:3px;margin:26px 0 0}
+@media(max-width:650px){.controls{grid-template-columns:1fr}.frame{padding:39px 15px 32px}.countdown{gap:5px}.unit{min-width:53px}}
+</style>
+</head>
+<body>
+<div id="sparkles"></div>
+<main>
+  <div class="kicker">Una celebración digna de la realeza · 2026</div>
+  <section class="envelope-wrap">
+    <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Abrir invitación">
+      <div class="env-base"></div><div class="env-flap"></div><div class="env-fold"></div><div class="seal">♛</div>
+    </div>
+    <div class="tap" id="taptext">Toca el sello real para descubrir tu invitación</div>
+  </section>
+  <section class="invite" id="invite">
+    <div class="frame">
+      <span class="corner tl">❧</span><span class="corner tr">❧</span><span class="corner bl">❧</span><span class="corner br">❧</span>
+      <div class="eyebrow">Con inmensa alegría te invito a celebrar</div>
+      <div class="crest">SV</div>
+      <div class="eyebrow">La noche más esperada</div>
+      <h1>Sofía Valentina<span>Pimienta Rojas</span></h1>
+      <div class="age">XV<small>AÑOS</small></div>
+      <div class="divider"></div>
+      <p class="message">Quince años de sueños, ilusión y momentos maravillosos. Quiero que seas parte de esta noche especial, donde celebraremos la magia de crecer y comenzar nuevos sueños.</p>
+      <div class="event"><strong>SÁBADO · 5 DE DICIEMBRE DE 2026</strong><br>7:00 P. M.<br><strong>RODIZIO</strong><br><span class="address">Cl. 93 #47-33 · Barrio Riomar</span></div>
+      <div class="countdown">
+        <div class="unit"><b id="days">--</b><span>DÍAS</span></div><div class="unit"><b id="hours">--</b><span>HORAS</span></div><div class="unit"><b id="mins">--</b><span>MIN</span></div><div class="unit"><b id="secs">--</b><span>SEG</span></div>
+      </div>
+      <div class="divider"></div>
+      <div class="eyebrow">Tu presencia será nuestro mejor regalo</div>
+    </div>
+  </section>
+
+  <section class="controls">
+    <div class="panel">
+      <h2>Invitación y cupos</h2>
+      <div class="fixed-seats">Cupos asignados: <strong>2</strong></div>
+      <a class="btn whatsapp" id="confirm" href="https://wa.me/573017893743?text=Hola.%20Confirmo%201%20cupo%20para%20los%20XV%20de%20Sof%C3%ADa%20Valentina%20Pimienta%20Rojas%2C%20el%20s%C3%A1bado%205%20de%20diciembre%20de%202026%20a%20las%207%3A00%20p.%20m.%20%C2%A1Gracias%20por%20la%20invitaci%C3%B3n!" target="_blank" rel="noopener">Confirmar asistencia por WhatsApp</a>
+    </div>
+    <div class="panel">
+      <h2>Prepara tu noche</h2>
+      <p>Consulta la ubicación del lugar de celebración y encuentra cómo llegar.</p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Rodizio%20Cl.%2093%20%2347-33%20Barrio%20Riomar" target="_blank" rel="noopener">Cómo llegar · Google Maps</a>
+    </div>
+  </section>
+  <div class="footer">XV · SOFÍA VALENTINA · UNA NOCHE PARA BRILLAR</div>
+</main>
+<script>
+const field=document.getElementById('sparkles');
+for(let i=0;i<85;i++){let e=document.createElement('i');e.className='spark';e.style.left=Math.random()*100+'%';e.style.top=Math.random()*100+'%';e.style.setProperty('--dur',(2+Math.random()*4)+'s');e.style.animationDelay=Math.random()*4+'s';field.appendChild(e)}
+const env=document.getElementById('envelope'),invite=document.getElementById('invite');
+function reveal(){env.classList.add('open');invite.classList.add('show');document.getElementById('taptext').textContent='Tu invitación real está abierta';}
+env.addEventListener('click',reveal);env.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();reveal()}});
+function tick(){let diff=Math.max(0,new Date(2026,11,5,19).getTime()-Date.now());for(const [id,val] of [['days',Math.floor(diff/86400000)],['hours',Math.floor(diff%86400000/3600000)],['mins',Math.floor(diff%3600000/60000)],['secs',Math.floor(diff%60000/1000)]])document.getElementById(id).textContent=val}
+tick();setInterval(tick,1000);
+// Confirmación fija: cada invitación tiene asignado exactamente 1 cupo.
+</script>
+</body>
+</html>
